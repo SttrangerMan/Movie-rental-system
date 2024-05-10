@@ -1,5 +1,5 @@
 # musicians/urls.py
 from django.urls import path
-from .views import MusicianView
+from .views import UserView
 
-urlpatterns = [path("users/", MusicianView.as_view())]
+urlpatterns = [path("users/", UserView.as_view())]

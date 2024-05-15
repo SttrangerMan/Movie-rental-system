@@ -1,9 +1,9 @@
+from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.views import APIView, status, Request, Response
+from rest_framework.generics import get_object_or_404
+from .permissions import MyCustomPermission
 from .serializers import MovieSerializer
 from .models import Movie
-from rest_framework_simplejwt.authentication import JWTAuthentication
-from .permissions import MyCustomPermission
-from rest_framework.generics import get_object_or_404
 
 
 class MoviesViews(APIView):
